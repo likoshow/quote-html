@@ -8,7 +8,7 @@
   "activationCommands": {
     "atom-workspace": "quote-html:toggle"
   },
-  "repository": "https://github.com/atom/quote-html",
+  "repository": "https://github.com/likoshow/quote-html.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
