@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle quote-html",
+        "command": "quote-html:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "quote-html",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "quote-html:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
