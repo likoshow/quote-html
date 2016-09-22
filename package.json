@@ -1,14 +1,17 @@
 {
   "name": "quote-html",
   "main": "./lib/quote-html",
-  "version": "0.1.0",
-  "description": "A short description of your package",
+  "version": "0.2.0",
+  "description": "A short tools to quote html code to js string code in multi lines.",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": "quote-html:toggle"
   },
-  "repository": "https://github.com/likoshow/quote-html.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/likoshow/quote-html.git"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
