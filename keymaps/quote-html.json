@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "quote-html:toggle"
+    "ctrl-alt-o": "quote-html:toHTML"
   }
 }

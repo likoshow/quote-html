@@ -15,7 +15,7 @@ describe('QuoteHtml', () => {
     activationPromise = atom.packages.activatePackage('quote-html');
   });
 
-  describe('when the quote-html:toggle event is triggered', () => {
+  describe('when the quote-html:toHTML event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
@@ -23,7 +23,7 @@ describe('QuoteHtml', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'quote-html:toggle');
+      atom.commands.dispatch(workspaceElement, 'quote-html:toHTML');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -37,7 +37,7 @@ describe('QuoteHtml', () => {
 
         let quoteHtmlPanel = atom.workspace.panelForItem(quoteHtmlElement);
         expect(quoteHtmlPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'quote-html:toggle');
+        atom.commands.dispatch(workspaceElement, 'quote-html:toHTML');
         expect(quoteHtmlPanel.isVisible()).toBe(false);
       });
     });
@@ -55,7 +55,7 @@ describe('QuoteHtml', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'quote-html:toggle');
+      atom.commands.dispatch(workspaceElement, 'quote-html:toHTML');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -65,7 +65,7 @@ describe('QuoteHtml', () => {
         // Now we can test for view visibility
         let quoteHtmlElement = workspaceElement.querySelector('.quote-html');
         expect(quoteHtmlElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'quote-html:toggle');
+        atom.commands.dispatch(workspaceElement, 'quote-html:toHTML');
         expect(quoteHtmlElement).not.toBeVisible();
       });
     });

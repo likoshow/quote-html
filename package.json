@@ -1,12 +1,11 @@
 {
   "name": "quote-html",
   "main": "./lib/quote-html",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A short tools to quote html code to js string code in multi lines.",
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "quote-html:toggle"
   },
   "repository": {
     "type": "git",

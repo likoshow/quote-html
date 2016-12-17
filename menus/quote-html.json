@@ -1,11 +1,22 @@
 {
   "context-menu": {
-    "atom-text-editor": [
-      {
-        "label": "quote-html",
-        "command": "quote-html:toggle"
-      }
-    ]
+    "atom-text-editor": [{
+        "label": "quote",
+        "submenu": [
+            {
+                "label": "quote-html",
+                "command": "quote-html:toHTML"
+            },
+            {
+                "label": "double->single",
+                "command": "quote-html:2to1"
+            },
+            {
+                "label": "single->double",
+                "command": "quote-html:1to2"
+            }
+        ]
+    }]
   },
   "menu": [
     {
@@ -15,8 +26,16 @@
           "label": "quote-html",
           "submenu": [
             {
-              "label": "Action",
-              "command": "quote-html:toggle"
+              "label": "toHTML",
+              "command": "quote-html:toHTML"
+            },
+            {
+                "label": "double->single",
+                "command": "quote-html:2to1"
+            },
+            {
+                "label": "single->double",
+                "command": "quote-html:1to2"
             }
           ]
         }
